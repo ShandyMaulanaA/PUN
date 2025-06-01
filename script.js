@@ -1,12 +1,17 @@
 // script.js
 
-function toggleMenu() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
-}
-
-// Optional: Form validation feedback (basic)
 document.addEventListener("DOMContentLoaded", function () {
+  // Fungsi untuk toggle menu navigasi mobile
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.getElementById("navLinks");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  }
+
+  // Validasi formulir
   const forms = document.querySelectorAll("form.formulir");
   forms.forEach((form) => {
     form.addEventListener("submit", function (event) {
@@ -24,37 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         alert("Mohon lengkapi semua isian dengan benar.");
       }
-
-// Toggle menu responsive
-function toggleMenu() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
-}
-
-// Tambahan: validasi form dasar
-// Menandai input kosong saat form disubmit
-window.addEventListener("DOMContentLoaded", function () {
-  const forms = document.querySelectorAll("form.formulir");
-
-  forms.forEach((form) => {
-    form.addEventListener("submit", function (e) {
-      const inputs = form.querySelectorAll("input, textarea");
-      let allValid = true;
-
-      inputs.forEach((input) => {
-        if (!input.checkValidity()) {
-          input.classList.add("invalid");
-          allValid = false;
-        } else {
-          input.classList.remove("invalid");
-        }
-      });
-
-      if (!allValid) {
-        e.preventDefault();
-        alert("Mohon lengkapi semua isian dengan benar.");
-      }
     });
   });
 });
-

@@ -1,17 +1,14 @@
 // script.js
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Fungsi untuk toggle menu navigasi mobile
-  const menuToggle = document.querySelector(".menu-toggle");
+// Fungsi toggle menu responsive
+function toggleMenu() {
   const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
-    });
-  }
-
-  // Validasi formulir
+// Jalankan saat halaman dimuat
+document.addEventListener("DOMContentLoaded", function () {
+  // Validasi formulir (opsional)
   const forms = document.querySelectorAll("form.formulir");
   forms.forEach((form) => {
     form.addEventListener("submit", function (event) {

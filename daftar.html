@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Pendaftaran - PUN Wilayah Utara</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container container">
+      <div class="logo">PUN Wilayah Utara</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="daftar.html">Daftar</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Formulir Daftar -->
+  <section class="container daftar">
+    <h2>Pendaftaran Anggota</h2>
+    <p>Silakan isi formulir di bawah ini untuk bergabung menjadi anggota PUN Wilayah Utara.</p>
+    <form action="#" method="post" class="formulir">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="nohp">Nomor HP/WA</label>
+      <input type="tel" id="nohp" name="nohp" required />
+
+      <label for="alasan">Alasan Ingin Bergabung</label>
+      <textarea id="alasan" name="alasan" rows="4" required></textarea>
+
+      <button type="submit" class="btn-primary">Kirim Pendaftaran</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <h3>PUN Wilayah Utara</h3>
+        <p>Sejak 1975, menjunjung kejujuran dan keadilan.</p>
+        <p>Email: putranusantara75@gmail.com</p>
+        <p>Basecamp: Loteng</p>
+      </div>
+      <div class="footer-right">
+        <p>Ikuti kami:</p>
+        <p>Instagram | Facebook | YouTube | Twitter</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

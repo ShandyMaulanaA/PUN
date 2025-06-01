@@ -1,0 +1,364 @@
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #1b5e20;
+  padding: 1rem 0.8rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #f9a825;
+}
+
+/* === HAMBURGER MENU (RESPONSIVE) === */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: linear-gradient(to right, #2e7d32, #66bb6a);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.btn-primary {
+  background-color: #f9a825;
+  padding: 0.8rem 1.5rem;
+  color: black;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background-color: #fdd835;
+}
+/* === ABOUT SECTION === */
+.about {
+  background: #fff;
+  padding: 3rem 0;
+}
+.about h2 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.about p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+.visi-misi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.visi, .misi {
+  flex: 1;
+  min-width: 280px;
+}
+.visi h3, .misi h3 {
+  margin-bottom: 0.5rem;
+  color: #2e7d32;
+}
+.misi ul {
+  padding-left: 1.2rem;
+}
+.misi ul li {
+  margin-bottom: 0.4rem;
+  list-style: disc;
+}
+
+/* === PROGRAM SECTION === */
+.programs {
+  background-color: #f1f8e9;
+  padding: 3rem 0;
+}
+.programs h2 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 2rem;
+}
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.program-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+}
+.program-card h3 {
+  margin-bottom: 0.5rem;
+  color: #33691e;
+}
+.program-card p {
+  font-size: 0.95rem;
+}
+
+/* === STRUKTUR SECTION === */
+.struktur {
+  background-color: #ffffff;
+  padding: 3rem 0;
+}
+.struktur h2 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 1rem;
+}
+.struktur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.person {
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+.anggota-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.anggota-list li {
+  background-color: #c8e6c9;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+/* === CTA SECTION === */
+.cta {
+  background-color: #f9a825;
+  color: #1b1b1b;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.cta-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.cta-content .btn-primary {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+.cta-content .btn-primary:hover {
+  background-color: #333;
+}
+/* === FOOTER === */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  padding: 2rem 1rem;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-left h3 {
+  margin-bottom: 0.5rem;
+}
+.footer-left p,
+.footer-right p {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+/* === FORM PENDAFTARAN === */
+.form-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+.form-section h2 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 2rem;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9fbe7;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+form button {
+  margin-top: 1.5rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #1b5e20;
+}
+
+/* === GALERI === */
+.galeri {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+.galeri h2 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 2rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1b5e20;
+    padding: 1rem 0;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .program-list,
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .struktur-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
